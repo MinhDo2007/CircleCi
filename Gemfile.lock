@@ -42,7 +42,7 @@ GEM
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-    addressable (2.7.0)
+    addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     archive-zip (0.12.0)
       io-like (~> 0.3.0)
@@ -61,6 +61,10 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (~> 1.5)
       xpath (~> 3.2)
+    checkstyle_filter-git (1.2.0)
+      git_diff_parser
+      rexml
+      thor
     childprocess (3.0.0)
     chromedriver-helper (2.1.1)
       archive-zip (~> 0.10)
@@ -123,7 +127,7 @@ GEM
     parser (2.6.5.0)
       ast (~> 2.4.0)
     pg (1.1.4)
-    public_suffix (4.0.1)
+    public_suffix (4.0.6)
     puma (3.12.1)
     rack (2.0.7)
     rack-test (1.1.0)
@@ -158,6 +162,7 @@ GEM
     rb-inotify (0.10.0)
       ffi (~> 1.0)
     regexp_parser (1.6.0)
+    rexml (3.2.5)
     rubocop (0.75.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
@@ -167,6 +172,8 @@ GEM
       unicode-display_width (>= 1.4.0, < 1.7)
     rubocop-checkstyle_formatter (0.4.0)
       rubocop (>= 0.35.1)
+    rubocop-select (2.0.0)
+      rubocop
     ruby-progressbar (1.10.1)
     ruby_dep (1.5.0)
     rubyzip (2.0.0)
@@ -244,6 +251,7 @@ DEPENDENCIES
   bootsnap (>= 1.1.0)
   byebug
   capybara (>= 2.15)
+  checkstyle_filter-git
   chromedriver-helper
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
@@ -253,6 +261,7 @@ DEPENDENCIES
   rails (~> 5.2.3)
   rubocop
   rubocop-checkstyle_formatter
+  rubocop-select
   saddler
   saddler-reporter-github
   sass-rails (~> 5.0)
